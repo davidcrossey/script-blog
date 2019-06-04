@@ -9,4 +9,4 @@ Source code used in kdb/q Insights: Scripting with q blog
 
 ## Acknowledgments
 * *Caolan Rafferty* -  reviewing blog drafts
-* *Jeffry A. Borror* - source code for sample trades from https://code.kx.com/q4m3/1_Q_Shock_and_Awe/#117-example-trades-table
+* *Jeffry A. Borror* - source code for [sample trades](https://code.kx.com/q4m3/1_Q_Shock_and_Awe/#117-example-trades-table)
