@@ -1,6 +1,9 @@
 # script-blog
 Source code used in kdb/q Insights: Scripting with q blog
 
+## External scripts
+* [dbmaint](https://github.com/KxSystems/kdb/blob/master/utils/dbmaint.md)
+
 ## Authors
 * **David Crossey** - *Blog & Script author* - [KxSystems](https://github.com/KxSystems)
 
