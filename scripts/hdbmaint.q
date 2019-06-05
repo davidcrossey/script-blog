@@ -1,5 +1,5 @@
-d:.Q.opt .z.x;
-database: hsym `$ first d[`database];
+d:first each .Q.opt .z.x;
+database: hsym `$ d[`database];
 
 system "c 2000 2000";
 
@@ -22,7 +22,7 @@ calcVal:{(hsym `$(y,"/",string[x],"/trades/val")) set {x[0]*x[1]} get@'(hsym`$/:
 calcVal each date;
 
 .log.out "Changing symbols to uppercase...";
-(` sv (database;`sym)) set `$upper string get ` sv (database;`sym); /disclaimer, never run something like this on production!
+(` sv (database;`sym)) set  @[sym;(where sym=distinct raze {[x;y] exec sym from select sym from x where date=y}[`trades;] each date);upper];
 
 .log.out "Reloading database: ",string database;
 system "l ",1_string database;
