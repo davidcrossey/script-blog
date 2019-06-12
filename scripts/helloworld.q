@@ -13,4 +13,4 @@ main:{
   .log.sucexit[];
  };
 
-@[main;`;`$"Error running main"];
+@[main;`;{.log.err "Error running main: ",x;exit 1}];
